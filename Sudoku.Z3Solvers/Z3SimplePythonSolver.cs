@@ -31,7 +31,7 @@ public class Z3SimplePythonSolver : PythonSolverBase
 			scope.Set("instance", pyCells);
 
 			// run the Python script
-			string code = System.IO.File.ReadAllText("z3solver.py");
+			var code = GetPythonScript();
 
 
 			scope.Exec(code);
@@ -48,7 +48,11 @@ public class Z3SimplePythonSolver : PythonSolverBase
 
 	}
 
-
+	protected virtual string GetPythonScript()
+	{
+		string code = System.IO.File.ReadAllText("z3solver.py");
+		return code;
+	}
 
 
 	protected override void InitializePythonComponents()

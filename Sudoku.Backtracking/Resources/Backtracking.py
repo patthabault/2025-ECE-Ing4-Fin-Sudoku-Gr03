@@ -16,6 +16,7 @@ def is_valid(grid, row, col, num):
         for c in range(start_col, start_col + 3):
             if grid[r, c] == num:
                 return False
+            
     return True
 
 def solve_sudoku(grid, row=0, col=0):

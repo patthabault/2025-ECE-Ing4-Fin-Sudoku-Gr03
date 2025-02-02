@@ -15,9 +15,14 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CCNPythonSimpleSolver\CCNPythonSimpleSolver.csproj" />
+    <ProjectReference Include="..\Sudoku.GraphTheory\Sudoku.GrapheTheory.csproj" />
+    <ProjectReference Include="..\Sudoku.PierreLouis\Sudoku.PierreLouis.csproj" />
     <ProjectReference Include="../Sudoku.Constraint/Sudoku.Constraint.csproj" />
+    <ProjectReference Include="..\Sudoku.ORToolsSolvers\Sudoku.ORToolsSolvers.csproj" />
     <ProjectReference Include="..\Sudoku.Shared\Sudoku.Shared.csproj" />
     <ProjectReference Include="..\Sudoku.Backtracking\Sudoku.Backtracking.csproj" />
+    <ProjectReference Include="..\Sudoku.Z3Solvers\Sudoku.Z3Solvers.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">
